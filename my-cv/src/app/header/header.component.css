@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    background: rgb(49, 0, 128);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.header-link{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
