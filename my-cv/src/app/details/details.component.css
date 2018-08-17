@@ -1,0 +1,34 @@
+.details-container{
+    margin-top: 60px;
+    padding: 0 20px;
+}
+.example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+.example-large-box {
+    height: 300px;
+    width: 300px;
+  }
+
+::ng-deep .mat-ink-bar{
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
+}
+.example-card{
+    width: 70%;
+    min-height: 410px;
+}
+.mat-card-header{
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    color: #fff;
+    font-weight: 600;
+    padding: 22px;
+  }
+  .mat-card-content{
+    margin-top: 16px;
+    min-height: 200px;
+  }

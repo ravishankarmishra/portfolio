@@ -6,7 +6,7 @@
     height: 40px;
     position: fixed;
     width: 100%;
-    background: rgb(49, 0, 128);
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
     z-index: 2;
     top: 0;
     left: 0;
@@ -17,3 +17,142 @@
     text-decoration: none;
     font-weight: 600;
 }
+.hamburger-icon {
+    position: relative;
+    z-index: 35;
+    padding: 8px 24px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  .ham-lines {
+    width: 35px;
+    height: 2px;
+    margin: 6px 0;
+    background: #000;
+  }
+  .ham-lines-dark{
+    background: #fff;
+  }
+
+  .side-menu-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 25;
+  }
+  
+  .side-menu-container-active {
+    pointer-events: auto;
+  }
+  
+  .side-menu-container::before {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0c1066;
+    opacity: 0;
+    transition: opacity 300ms linear;
+    will-change: opacity;
+  }
+  
+  .side-menu-container-active::before {
+    opacity: 0.3;
+  }
+  
+  .slide-menu {
+    box-sizing: border-box;
+    transform: translateX(-103%);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 90%;
+    max-width: 415px;
+    background-color: white;
+    box-shadow: 0 0 32px rgba(0, 0, 255, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-gap: 16px;
+    transition: transform 300ms linear;
+    will-change: transform;
+  }
+  
+  .slide-menu-active {
+    transform: none;
+  }
+  
+  .menu-header {
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "greeting greeting" "image details";
+    box-sizing: border-box;
+    width: 100%;
+    align-content: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 255, 0.2);
+  }
+  
+  .greeting-text {
+    grid-area: greeting;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .account-details {
+    grid-area: details;
+    display: flex;
+    flex-flow: column;
+    margin-left: 16px;
+    align-self: center;
+  }
+  
+  .name-text {
+    font-size: 18.4px;
+    margin-bottom: 8px;
+  }
+  
+  .email-text {
+    font-size: 14.4px;
+    letter-spacing: 1.6pxm;
+  }
+  
+  .menu-body {
+    display: grid;
+    width: 100%;
+  }
+  
+  .profile-image-container {
+    grid-area: image;
+    margin-right: 8px;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    align-self: center;
+    margin-left: 32px;
+  }
+  
+  .profile-img {
+    max-width: 64px;
+  }

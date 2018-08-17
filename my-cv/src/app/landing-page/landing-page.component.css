@@ -3,11 +3,17 @@
     padding: 0 20px;
 }
 .example-card {
-    max-width: 400px;
+    margin-top: 10px;
   }
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+  .mat-card-header{
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    color: #fff;
+    font-weight: 600;
+    padding: 22px;
+  }
+  .mat-card-content{
+    margin-top: 16px;
+    min-height: 75px;
   }
   

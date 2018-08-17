@@ -1,10 +1,27 @@
 <nav class="header">
-  <a class="header-link" href="">1st Link</a>
-  <a class="header-link" href="">2nd Link</a>
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
+
+    <div (click)="toggleMenu()" class="hamburger-icon">
+        <div class="ham-lines"></div>
+        <div class="ham-lines"></div>
+        <div class="ham-lines"></div>
+    </div>
+    
+  <a class="header-link" href="" routerLink="/app-landing-page">Home</a>
+  <a class="header-link" href="" routerLink="/app-details">Details</a>
+
+  <div class="side-menu-container" [ngClass]="{'side-menu-container-active': showMenu}" (click)="toggleMenu()">
+      <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+        <section class="menu-header">
+          <span class="greeting-text">Welcome Back</span>
+          <div class="profile-image-container">
+            <img src = "">
+          </div>
+          <div class="account-details">
+            <span class="name-text">Ravi Shankar Mishra</span>
+            <span class="email-text">ravi712@hotmail.com</span>
+          </div>
+        </section>
+      </nav>
+    </div>
   
 </nav>

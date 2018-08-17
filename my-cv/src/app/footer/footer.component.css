@@ -4,12 +4,9 @@
     align-items: center;
     padding: 8px 16px;
     height: 40px;
-    position: fixed;
-    width: 100%;
-    background: rgb(49, 0, 128);
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
     z-index: 2;
-    bottom: 0;
-    left: 0;
+    margin-top: 25px;
 }
 .footer-link{
     color: #fff;
