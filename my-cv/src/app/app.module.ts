@@ -20,7 +20,12 @@ import { DetailsComponent } from './details/details.component';
 
 const appRoutes: Routes = [
   { path: 'app-landing-page', component: LandingPageComponent },
-  { path: 'app-details', component: DetailsComponent }
+  { path: 'app-details', component: DetailsComponent },
+  { path: '',
+    redirectTo: '/app-landing-page',
+    pathMatch: 'full'
+  },
+  { path: '**', component: LandingPageComponent }
 
 ];
 @NgModule({
