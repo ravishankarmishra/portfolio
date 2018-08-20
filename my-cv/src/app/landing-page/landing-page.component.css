@@ -1,0 +1,19 @@
+.landing-container{
+    margin-top: 56px;
+    padding: 0 20px;
+}
+.example-card {
+    margin-top: 10px;
+  }
+  
+  .mat-card-header{
+    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    color: #fff;
+    font-weight: 600;
+    padding: 22px;
+  }
+  .mat-card-content{
+    margin-top: 16px;
+    min-height: 75px;
+  }
+  
