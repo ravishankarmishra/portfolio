@@ -1,19 +1,59 @@
+@import "../../_variables.scss";
+
 .landing-container{
     margin-top: 56px;
-    padding: 0 20px;
-}
-.example-card {
-    margin-top: 10px;
+      .about-me{
+        background: #6a6a6a;
+        color: #cacaca;
+        width: 100%;
+        .container{
+          padding: 20% 3%;
+         
+        }
+      }
+    .cards{
+      padding: 0 20px;
+      .example-card {
+        margin-top: 10px;
+        .mat-card-header{
+          background: $light-header-background;
+          color: #fff;
+          font-weight: 600;
+          padding: 22px;
+        }
+        .mat-card-content{
+          margin-top: 16px;
+          min-height: 75px;
+        }
+      }
+    }
   }
+
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
   
-  .mat-card-header{
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
-    color: #fff;
-    font-weight: 600;
-    padding: 22px;
-  }
-  .mat-card-content{
-    margin-top: 16px;
-    min-height: 75px;
-  }
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
   
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+
+  p{
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 41em;
+    animation: type 4s steps(60, end);
+  }
+  p:nth-child{
+    animation: type2 8s steps(60, end);
+  }
+  span{
+    animation: blink 1s infinite;
+  }

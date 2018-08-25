@@ -1,3 +1,5 @@
+@import "../../_variables.scss";
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +8,7 @@
     height: 40px;
     position: fixed;
     width: 100%;
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    background: $light-header-background;
     z-index: 2;
     top: 0;
     left: 0;
@@ -93,7 +95,7 @@
   }
   
   .menu-header {
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    background: $light-header-background;
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;

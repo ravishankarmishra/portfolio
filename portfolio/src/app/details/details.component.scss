@@ -1,3 +1,5 @@
+@import "../../_variables.scss";
+
 .details-container{
     margin-top: 60px;
     padding: 0 20px;
@@ -16,14 +18,14 @@
   }
 
 ::ng-deep .mat-ink-bar{
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    background: $light-header-background;
 }
 .example-card{
     width: 70%;
     min-height: 410px;
 }
 .mat-card-header{
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
+    background: $light-header-background;
     color: #fff;
     font-weight: 600;
     padding: 22px;
