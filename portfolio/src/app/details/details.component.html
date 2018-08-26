@@ -2,7 +2,18 @@
   <mat-tab-group dynamicHeight>
     <mat-tab label="FrontEnd Expertise">
       <div fxFlex>
-        <mat-card class="example-card">
+        <div class="basic-intro">
+          I specialise in applications written in Angular. Recently, I became also a huge fan of Redux-like architecture and typed languages like TypeScript.<br>
+          My current experience and skills in front-end include:
+          <ul>
+          <li>TypeScript/JavaScript development: bootstraping or refactoring an existing app architecture, by improving its' extensibility and reliability;</li>
+          <li>Full integration of front-end development using tools like Webpack with features like automatic code reload, code minifications, multiple environments support,</li>
+          <li>Fair sense of design and UX</li>
+          <li> Knowledge and experience in many JS ecosystem, by using many libraries like Redux, Observable, RxJS, Angular, jQuery and whatever else was needed.</li>
+        </ul>
+        </div>
+        <div class="card-view">
+          <mat-card class="example-card">
           <mat-card-content>
             <div *ngFor="let skills of data">
               <mat-accordion>
@@ -19,10 +30,22 @@
           </mat-card-content>
         </mat-card>
       </div>
+      </div>
     </mat-tab>
 
     <mat-tab label="BackEnd Expertise">
         <div fxFlex>
+            <div class="basic-intro">
+                In back-end development, my current stack involves Java, WCS  and SpringBoot Framework, From MEAN stack i am very much impressed with NodeJS and wouls like to get my hands dirty with it. 
+                What I can do is:
+                <ul>
+                <li>Integration of front-end development and back-end</li>
+                <li>Development of apps using Java and SpringBoot</li>
+                <li>Development of web services</li>
+                <li>Refactor existing applications, by improving code readibility, separating concerns into separate functions and classes, splitting out the business logic from app's views and controllers</li>
+              </ul>
+              </div>
+              <div class="card-view">
             <mat-card class="example-card">
               <mat-card-content>
                 <div *ngFor="let skills of bData">
@@ -39,6 +62,7 @@
                 </div>
               </mat-card-content>
             </mat-card>
+            </div>
           </div>
     </mat-tab>
   </mat-tab-group>

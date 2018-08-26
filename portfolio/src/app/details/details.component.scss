@@ -3,34 +3,22 @@
 .details-container{
     margin-top: 60px;
     padding: 0 20px;
+    .basic-intro{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 3%;
+    }
+    .card-view{
+        padding: 0 5%;
+        .example-card{
+            .mat-card-content{
+                margin-top: 16px;
+                min-height: 200px;
+              }
+        }
+    }
 }
-.example-small-box, .example-large-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 16px;
-    padding: 16px;
-    border-radius: 8px;
-  }
-.example-large-box {
-    height: 300px;
-    width: 300px;
-  }
 
 ::ng-deep .mat-ink-bar{
     background: $light-header-background;
 }
-.example-card{
-    width: 70%;
-    min-height: 410px;
-}
-.mat-card-header{
-    background: $light-header-background;
-    color: #fff;
-    font-weight: 600;
-    padding: 22px;
-  }
-  .mat-card-content{
-    margin-top: 16px;
-    min-height: 200px;
-  }

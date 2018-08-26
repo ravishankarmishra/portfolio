@@ -3,12 +3,26 @@
 .landing-container{
     margin-top: 56px;
       .about-me{
-        background: #6a6a6a;
-        color: #cacaca;
+        background: #0d6084b8;
+        color: #ffffff;
         width: 100%;
         .container{
-          padding: 20% 3%;
-         
+          padding: 12% 3%;
+          .about-section{
+            .heading {
+              font-weight: bold;
+              font-size: 28px;
+              line-height: 35px;
+          }
+          .content{
+            font-size: 22px;
+            font-weight:400;
+            line-height: 26px;
+            small{
+              line-height: 30px
+            }
+          }
+        }
         }
       }
     .cards{
@@ -27,33 +41,4 @@
         }
       }
     }
-  }
-
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100; } 
-  } 
-  
-  @keyframes blink{
-    to{opacity: .0;}
-  }
-
-  p{
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 41em;
-    animation: type 4s steps(60, end);
-  }
-  p:nth-child{
-    animation: type2 8s steps(60, end);
-  }
-  span{
-    animation: blink 1s infinite;
   }
