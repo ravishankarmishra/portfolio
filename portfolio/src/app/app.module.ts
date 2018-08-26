@@ -9,6 +9,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
     FlexLayoutModule,
     MatTabsModule,
     MatExpansionModule,
+    MatIconModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

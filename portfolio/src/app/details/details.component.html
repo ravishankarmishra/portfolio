@@ -1,6 +1,10 @@
 <div class="details-container">
   <mat-tab-group dynamicHeight>
-    <mat-tab label="FrontEnd Expertise">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">important_devices</mat-icon>
+              FrontEnd Expertise
+          </ng-template>
       <div fxFlex>
         <div class="basic-intro">
           I specialise in applications written in Angular. Recently, I became also a huge fan of Redux-like architecture and typed languages like TypeScript.<br>
@@ -33,7 +37,11 @@
       </div>
     </mat-tab>
 
-    <mat-tab label="BackEnd Expertise">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">code</mat-icon>
+              BackEnd Expertise
+          </ng-template>
         <div fxFlex>
             <div class="basic-intro">
                 In back-end development, my current stack involves Java, WCS  and SpringBoot Framework, From MEAN stack i am very much impressed with NodeJS and wouls like to get my hands dirty with it. 
