@@ -15,9 +15,12 @@
 }
 .header-link{
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px 50px;
     text-decoration: none;
     font-weight: 600;
+    @media screen and (max-width: 768px){
+      padding: 5px 30px;
+    }
 }
 .hamburger-icon {
     position: relative;
@@ -155,7 +158,6 @@
     margin-left: 32px;
     img{
       height: 64px;
-      width: 64px;
     }
   }
   
