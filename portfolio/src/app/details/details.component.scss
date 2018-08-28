@@ -3,20 +3,18 @@
 .details-container{
     margin-top: 60px;
     padding: 0 20px;
-    .basic-intro{
+}
+.basic-intro{
         font-size: 15px;
         font-weight: 400;
         padding: 3%;
-    }
-    .card-view{
-        padding: 0 5%;
-        .example-card{
-            .mat-card-content{
-                margin-top: 16px;
-                min-height: 200px;
-              }
-        }
-    }
+}
+.mat-card-content{
+    margin-top: 16px;
+    min-height: 200px;
+}
+.card-view{
+    padding: 0 5%;
 }
 
 ::ng-deep .mat-ink-bar{

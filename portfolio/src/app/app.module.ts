@@ -17,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DetailsComponent } from './details/details.component';
+import { FrontendComponent } from './details/frontend/frontend.component';
+import { BackendComponent } from './details/backend/backend.component';
+import { ProjectsComponent } from './details/projects/projects.component';
 
 
 const appRoutes: Routes = [
@@ -36,7 +39,10 @@ const appRoutes: Routes = [
     FooterComponent,
     NavbarComponent,
     LandingPageComponent,
-    DetailsComponent
+    DetailsComponent,
+    FrontendComponent,
+    BackendComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

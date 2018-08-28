@@ -1,0 +1,31 @@
+
+<div fxFlex>
+  <div class="basic-intro">
+    I specialise in applications written in Angular. Recently, I became also a huge fan of Redux-like architecture and typed languages like TypeScript.<br>
+    My current experience and skills in front-end include:
+    <ul>
+    <li>TypeScript/JavaScript development: bootstraping or refactoring an existing app architecture, by improving its' extensibility and reliability;</li>
+    <li>Full integration of front-end development using tools like Webpack with features like automatic code reload, code minifications, multiple environments support,</li>
+    <li>Fair sense of design and UX</li>
+    <li> Knowledge and experience in many JS ecosystem, by using many libraries like Redux, Observable, RxJS, Angular, jQuery and whatever else was needed.</li>
+  </ul>
+  </div>
+  <div class="card-view">
+    <mat-card class="example-card">
+    <mat-card-content>
+      <div *ngFor="let skills of fdata">
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{skills.name}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>{{skills.description}}</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+</div>

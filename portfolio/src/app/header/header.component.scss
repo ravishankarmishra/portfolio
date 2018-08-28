@@ -135,7 +135,11 @@
   
   .email-text {
     font-size: 14.4px;
-    letter-spacing: 1.6pxm;
+    letter-spacing: 1.6px;
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
   }
   
   .menu-body {
