@@ -1,12 +1,33 @@
 <div fxFlex>
   <div class="basic-intro">
-    Worked for Disney client for the development of e-commerce website with responsive design to work on all mobile and tablet
-    sizes for sale of disney movies. The site is designed with dynamic layouts that spotlights product and content and allows
+    Worked for Disney for the development of e-commerce website with responsive design to work on all mobile and tablet
+    sizes for sale of disney movies. The site is designed with dynamic layouts that spotlights product and content and
+    allows
     the flexibility to feature the different worlds of Disney, Pixar, Star Wars and Marvel as new content debuts
     <ul>
       <div *ngFor="let skills of bData">
         <li>{{skills.description}}</li>
       </div>
     </ul>
+    <h1>Major projects during the duration:</h1>
+    <a href="http://disneymovieclub.go.com">Disney Movie Club</a> is the e-commerce website for Disney DVD and
+    Blu-rays. The website uses IBM WebSphere Commerce – a product from IBM which has been customized to meet client’s
+    requirements. The website has a membership based model and has involvement of lots of other vendors for managing
+    inventories, analytics, marketing and web content management. I have been involved in the project since 2016 as a
+    developer.
+    Website has gone under major uplifts by upgrading platform, development of different websites for desktop and
+    mobiles and adopting a highly responsive model.
+  </div>
+  <div *ngFor="let skills of fdata">
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{skills.name}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{skills.description}}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>

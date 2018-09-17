@@ -43,6 +43,14 @@
         .mat-card-content{
           margin-top: 16px;
           min-height: 75px;
+          .know-more-text{
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+        .mat-button{
+          width: 100%;
+          padding: 5.4%;
         }
       }
     }

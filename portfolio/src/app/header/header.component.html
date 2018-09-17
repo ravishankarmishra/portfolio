@@ -12,7 +12,7 @@
   <div class="side-menu-container" [ngClass]="{'side-menu-container-active': showMenu}" (click)="toggleMenu()">
       <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
         <section class="menu-header">
-          <span class="greeting-text">Welcome Back</span>
+          <span class="greeting-text">Hi There!</span>
           <div class="profile-image-container">
             <img src = "../../assets/IMG_20170514_194436040.jpg">
           </div>
@@ -23,6 +23,10 @@
             </span>
           </div>
         </section>
+        <div class="profile">
+            <a mat-raised-button href="https://www.linkedin.com/in/rsmishra" target="_blank">LinkedIn</a>
+            <a mat-raised-button href="../../assets/Resume_Ravi.pdf" target="_blank">Download my CV</a>
+        </div>
       </nav>
     </div>
   

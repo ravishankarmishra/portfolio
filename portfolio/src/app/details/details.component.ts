@@ -42,6 +42,7 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
 }
