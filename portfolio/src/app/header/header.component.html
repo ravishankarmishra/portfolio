@@ -1,0 +1,33 @@
+<nav class="header">
+
+    <div (click)="toggleMenu()" class="hamburger-icon">
+        <div class="ham-lines"></div>
+        <div class="ham-lines"></div>
+        <div class="ham-lines"></div>
+    </div>
+    
+  <a class="header-link" href="" routerLink="/app-landing-page">Home</a>
+  <a class="header-link" href="" routerLink="/app-details">Details</a>
+
+  <div class="side-menu-container" [ngClass]="{'side-menu-container-active': showMenu}" (click)="toggleMenu()">
+      <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+        <section class="menu-header">
+          <span class="greeting-text">Hi There!</span>
+          <div class="profile-image-container">
+            <img src = "../../assets/IMG_20170514_194436040.jpg">
+          </div>
+          <div class="account-details">
+            <span class="name-text">Ravi Shankar Mishra</span>
+            <span class="email-text">
+                <a href="mailto:ravi712@hotmail.com?Subject=Hello%20again" target="_top">ravi712@hotmail.com</a>
+            </span>
+          </div>
+        </section>
+        <div class="profile">
+            <a mat-raised-button href="https://www.linkedin.com/in/rsmishra" target="_blank">LinkedIn</a>
+            <a mat-raised-button href="../../assets/Resume_Ravi.pdf" target="_blank">Download my CV</a>
+        </div>
+      </nav>
+    </div>
+  
+</nav>

@@ -1,0 +1,22 @@
+@import "../../_variables.scss";
+
+.details-container{
+    margin-top: 60px;
+    padding: 0 20px;
+}
+.basic-intro{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 3%;
+}
+.mat-card-content{
+    margin-top: 16px;
+    min-height: 200px;
+}
+.card-view{
+    padding: 0 5%;
+}
+
+::ng-deep .mat-ink-bar{
+    background: $light-header-background;
+}
