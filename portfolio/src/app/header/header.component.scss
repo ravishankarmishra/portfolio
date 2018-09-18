@@ -162,6 +162,7 @@
     margin-left: 32px;
     img{
       height: 64px;
+      width: 62px;
     }
   }
   
@@ -177,4 +178,11 @@
     color: #fff;
     font-size: 20px;
     margin-top: 15px;
+}
+::ng-deep .mat-tab-header-pagination{
+  z-index: 0 !important;
+  min-width: 12px !important;
+}
+::ng-deep .mat-elevation-z4{
+  box-shadow:unset !important;
 }
