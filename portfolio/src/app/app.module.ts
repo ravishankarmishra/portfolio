@@ -57,7 +57,7 @@ const appRoutes: Routes = [
     MatIconModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { useHash: true }// <-- debugging purposes only
     )
   ],
   providers: [],

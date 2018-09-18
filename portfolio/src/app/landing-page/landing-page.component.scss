@@ -34,6 +34,9 @@
       padding: 0 20px;
       .example-card {
         margin-top: 10px;
+        @media screen and (min-width: 768px){
+          min-height:170px;
+        }
         .mat-card-header{
           background: $light-header-background;
           color: #fff;
@@ -46,11 +49,19 @@
           .know-more-text{
             font-size: 30px;
             font-weight: 400;
+            color: #fff;
+            vertical-align: text-top;
+            .material-icons{
+              font-size: -webkit-xxx-large;
+              margin-top: 5px;
+              vertical-align: top;
+            }
           }
         }
         .mat-button{
           width: 100%;
-          padding: 5.4%;
+          height: 169px;
+          background: #1fa089ba;
         }
       }
     }
